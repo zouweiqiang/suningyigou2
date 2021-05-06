@@ -1,0 +1,170 @@
+/* 如果屏幕超过750px,就按照750显示，不会超过750 */
+@media screen and (min-width: 750px) {
+    html {
+      font-size: 75px!important;
+    }
+}
+
+body {
+    min-width: 320px;
+    max-width: 750px;
+    /* flexibel 划分了10等份 */
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial,Helvetica;
+    background: #F2F2F2;
+}
+
+a{
+    text-decoration: none;
+    font-size: .333333rem;
+}
+
+/* <!-- 顶部搜索框 --> */
+.search-content {
+    display: flex;
+    position: fixed;
+    width: 10rem;
+    height: 1.173333rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffdb47;
+}
+.classify{
+    width: .48rem;
+    height: .8rem;
+    margin: .16rem .333333rem 0 .333333rem;
+    background: url(../images/classification.png) no-repeat;
+    background-size: .48rem .8rem;
+}
+.search{
+    flex: 1;
+    position: relative;
+}
+.search input{
+    width: 100%;
+    height: .88rem;
+    outline: none;
+    border: 0;
+    font-size: .333333rem;
+    background-color: #ffffff;
+    margin-top: .133333rem;
+    border-radius: .44rem;
+    color: #cccccc;
+    padding-left: .866667rem;
+}
+.search-icon {
+    position: absolute;
+    width: .48rem;
+    height: .48rem;
+    top: .333333rem;
+    left: .266667rem;
+    background: url(../images/search.png) no-repeat;
+    background-size: .48rem .48rem;
+}
+.login{
+    width: .48rem;
+    height: .8rem;
+    margin: .16rem .333333rem 0 .333333rem;
+    background: url(../images/SignIn.png) no-repeat;
+    background-size: .48rem .8rem;
+}
+
+/* <!-- banner部分 --> */
+.banner{
+  width: 10rem;
+  height: 2.666667rem;
+  margin-top: 1rem;
+}
+.banner img{
+  width: 100%;
+  height: 100%;
+}
+
+/* <!-- 广告部分 --> */
+.ad{
+  display: flex;
+  margin-top: .2rem;
+}
+.ad a{
+  flex: 1;
+}
+.ad a img {
+  width: 100%;
+}
+
+/* <!-- nav模块 --> */
+nav {
+  width: 10rem;
+}
+nav a {
+  float: left;
+  width: 2rem;
+  height: 1.866667rem;
+  text-align: center;
+}
+nav a img {
+  display: block;
+  width: 1.12rem;
+  height: 1.12rem;
+  margin: 0 auto .066667rem;
+}
+nav a span {
+  font-size: .333333rem;
+  color: #666666;
+}
+
+ /* newImgFloor部分 */
+.newImgFloor-content{
+  background-color: #f7f7f7;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 3.133333rem;
+  margin-top: 3.666667rem;
+}
+.newImgFloor-content a{
+  flex: 1;
+}
+.newImgFloor-content a:nth-child(1){
+  flex: 25%;
+  border-right: .04rem solid #f7f7f7;
+}
+.newImgFloor-content a:nth-child(2){
+  border-right: .04rem solid #f7f7f7;
+}
+.newImgFloor-content a img{
+  width: 100%;
+  height: 3.333333rem;
+}
+
+/* <!-- 底部分栏 --> */
+.v7-tab {
+  display: flex;
+  width: 10rem;
+  height: 1.333333rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  background-color: #fff;
+}
+.v7-tab a{
+  flex: 1;
+  font-size: .333333rem;
+}
+.v7-tab img {
+  display: block;
+  width: .64rem;
+  height: .64rem;
+  margin: 18px auto 0;
+}
+.v7-tab span {
+  display: block;
+  font-size: .266667rem;
+  line-height: .426667rem;
+  color: #666;
+  text-align: center;
+}
